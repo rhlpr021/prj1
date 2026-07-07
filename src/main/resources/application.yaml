@@ -1,3 +1,16 @@
 spring:
   application:
     name: prj1
+  datasource:
+    url: jdbc:sqlite:./prj1.db
+    driver-class-name: org.sqlite.JDBC
+    username:
+    password:
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8081
